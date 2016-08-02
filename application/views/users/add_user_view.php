@@ -16,6 +16,6 @@ echo form_submit('submit', 'Регистрация');
 
 echo form_close();
 
-echo "<h1> Ако сте регистриран ппотребител </h1>";
+echo "<h1> Ако сте регистриран потребител  :-) </h1>";
 
 echo "<p>".anchor('login/log_in', 'Login')."</p>";

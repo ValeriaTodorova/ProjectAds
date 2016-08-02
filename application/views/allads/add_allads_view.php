@@ -38,6 +38,9 @@ foreach ($types as $type) {
 
 echo "<p>".form_dropdown('types', $options_types)."</p>";
 
+<p><?php echo anchor('upload', 'Upload Photo!'); ?></p>
+
+
 echo form_submit('submit', 'Save');
 echo form_close();
 

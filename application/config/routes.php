@@ -56,6 +56,8 @@ $route['default_controller'] = 'user';
 >>>>>>> origin/master
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;*/
-$route['default_controller'] = '';
+
+
+$route['default_controller'] = 'login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;

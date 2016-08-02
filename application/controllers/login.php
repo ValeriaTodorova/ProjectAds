@@ -13,7 +13,7 @@ class Login extends CI_Controller{
 
 //Insert
 	public function show_add_user(){
-
+         $this->load->view('templates/header');
 		//$this->load->view('users/add_user_view');
 		$data['dynamic_view'] = 'users/add_user_view';
         $data['title'] = 'User view';
@@ -53,7 +53,7 @@ class Login extends CI_Controller{
 	//Login	
 	public function log_in($param = NULL){
 		$data['param'] = $param;
-		
+
 		//$this->load->view('users/login_view', $data);
 		$data['dynamic_view'] = 'users/login_view';
         $data['title'] = 'Login';
@@ -88,22 +88,22 @@ class Login extends CI_Controller{
         $this->load->view('templates/main_template', $data);
 	}
 
-	public function Phone_number(){
+	//public function Phone_number(){
 		//$this->load->view('users/phone');
-		$data['dynamic_view'] = 'users/phone';
-       	$data['title'] = 'Phone';
+		//$data['dynamic_view'] = 'users/phone';
+       	//$data['title'] = 'Phone';
 
-        $this->load->view('templates/main_template', $data);
+        //$this->load->view('templates/main_template', $data);
 
-	}
+	//}
 
-	public function All_information(){
+	//public function All_information(){
 		//$this->load->view('users/all_info');
-		$data['dynamic_view'] = 'users/all_info';
-       	$data['title'] = 'All info';
+		//$data['dynamic_view'] = 'users/all_info';
+      // 	$data['title'] = 'All info';
 
-        $this->load->view('templates/main_template', $data);
-	}
+      //  $this->load->view('templates/main_template', $data);
+	//}
 
 	public function upload(){
 		//$data['dynamic_view'] = 'users/upoalds/upload_form';
